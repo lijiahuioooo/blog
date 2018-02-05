@@ -6,23 +6,22 @@ const blogFacadeAbi= require("../ABI/BlogFacade.json");
 
 
 //ETH 节点地址
-const nodeAddress = process.env.FULL_NODE_URL || "http://localhost:7545";
+const nodeAddress = process.env.FULL_NODE_URL || "http://10.45.144.209:8545";
 
 //合约地址
-const blogFacadeAddress = "0x84e2c93ceb8431430d02f789462d3941e73ff5d1";
-
+const blogFacadeAddress = "0xae9011270d3aa5583e10de5b96bc21d129e3d184";
 
 
 //web3初始化
 
 
-const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'));
+const web3 = new Web3(new Web3.providers.HttpProvider(nodeAddress));
 //合约实例
 const facadeInstance = new web3.eth.Contract(blogFacadeAbi.abi,blogFacadeAddress);
 
 
-const from =web3.eth.accounts[0];
-const to =web3.eth.accounts[1];
+const from ="0x4af8f99f80c51193bbabf1aca8c3a6de2bf03c7e";
+const to ="0x9d94be74e4ff7344054aee36ad7ff05145d4be28";
 
 
 //根据索引查询博客

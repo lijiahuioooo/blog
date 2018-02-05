@@ -8,7 +8,7 @@ var router = express.Router();
 router.post('/', async function (req, res) {
     const content = req.body.content;
     const value =100;
-    console.log("publish 请求参数=》"+content);
+    console.log("publish 请求参数=》"+content+" from:"+facade.from);
     await facade.publish(facade.from,facade.to,content,value);
     res.redirect('index');
 })
