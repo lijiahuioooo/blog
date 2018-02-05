@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的首页 微博-随时随地发现新鲜事</title>
+    <link putoff="style/css/module/combination/extra.css?version=53239643d366b42c"
+          href="//img.t.sinajs.cn/t6/style/css/module/base/frame.css?version=53239643d366b42c" type="text/css"
+          rel="stylesheet" charset="utf-8">
+    <link includes="style/css/module/global/WB_left_nav.css?version=53239643d366b42c|style/css/module/tab/comb_WB_tab_profile.css?version=53239643d366b42c|style/css/module/list/comb_WB_feed.css?version=53239643d366b42c|style/css/apps_PCD/reco/index_right.css?version=53239643d366b42c|style/css/module/global/WB_ad.css?version=53239643d366b42c|style/css/module/global/W_person_info.css?version=53239643d366b42c|style/css/module/global/WB_rm_text_a.css?version=53239643d366b42c|style/css/module/global/WB_rm_text_b.css?version=53239643d366b42c|style/css/module/global/WB_rm_ut_a.css?version=53239643d366b42c|style/css/module/global/WB_rm_ut_b.css?version=53239643d366b42c|style/css/module/list/comb_webim.css?version=53239643d366b42c|style/css/module/pagecard/PCD_pictext_b.css?version=53239643d366b42c|style/css/module/pagecard/PCD_pictext_g.css?version=53239643d366b42c|style/css/apps_PCD/event/PCD_event_redpacks.css?version=53239643d366b42c"
+          href="//img.t.sinajs.cn/t6/style/css/module/combination/home_A.css?version=53239643d366b42c" type="text/css"
+          rel="stylesheet" charset="utf-8">
+    <link id="skin_style" href="//img.t.sinajs.cn/t6/skin/skin001/skin.css?version=53239643d366b42c" type="text/css"
+          rel="stylesheet" charset="utf-8">
+
+</head>
+
+<script type="text/javascript">
+
+     function submit(){
+
+          var content = document.getElementById('textId').value.trim();
+          if(content == ''){
+           alert('发布内容不能为空！');
+          }
+         document.getElementById('formContentId').value =content;
+         document.getElementById('formId').submit();
+     }
+
+  </script>
+
+<body class="FRAME_main B_index WB_macT" style="">
+<div class="WB_miniblog">
+    <div class="WB_miniblog_fb">
+        <div class="WB_main clearfix" id="plc_frame">
+            <div class="WB_frame">
+                <div class="WB_main_l" fixed-box="true"></div>
+                <div id="plc_main">
+                    <div class="WB_main_c">
+                        <div id="v6_pl_content_publishertop">
+                            <div class="send_weibo S_bg2 clearfix send_weibo_long" node-type="wrap">
+                                <div class="title_area clearfix">
+                                    <div class="title" node-type="publishTitle"><span class="txt">What’s new with you?</span>
+                                        <p class="W_swficon ficon_swtxt"><em class="spac1">有什么新</em><em
+                                                class="spac2">鲜</em><em class="spac3">事想告诉大家</em><em
+                                                class="spac4">?</em></p></div>
+
+                                        <p class="W_swficon ficon_swtxt" style="margin:0 auto;width:350px;text-align:right;"><em class="spac1">博客币: <%= balance %></em></p>
+                                    <div class="num S_txt2" node-type="num" style="display: none;"></div>
+
+                                </div>
+                                <!-- 发布 开始-->
+                                <div class="input " node-type="textElDiv">
+                                    <textarea class="W_input" title="微博输入框" name="" node-type="textEl" pic_split="1" range="0&amp;0"
+                                              style="height: 68px; margin: 0px; padding: 0px; border-style: none; border-width: 0px; font-size: 14px;
+                                              word-wrap: break-word; line-height: 18px; overflow: hidden; outline: none;" id="textId"></textarea>
+                                    <div class="send_succpic" style="display:none" node-type="successTip"><span
+                                            class="W_icon icon_succB"></span><span class="txt">发布成功</span></div>
+                                    <form style="display:none;" node-type="extradata" action="/publish" id="formId" method="post">
+                                        <input name="content" id="formContentId"/>
+                                    </form>
+                                    <div class="set_timer S_line1 S_bg1 clearfix" node-type="settime"
+                                         style="display: none;">
+                                        <span class="set_date_txt W_fl">发布时间：</span>
+>
+                                </div>
+                                <div class="func_area clearfix" node-type="widget" layout-shell="true">
+                                    <div class="func">
+
+                                        <a href="javascript:void(0);" class="W_btn_a btn_30px W_btn_a_disable"
+                                           diss-data="module=stissue" node-type="submit" title="发布博客按钮" onclick="submit()">发布</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                            <!-- 发布 结束-->
+                        <div id="v6_pl_content_homefeed">
+
+                        <% for(var i=0;i<contentArr.length;i++){%>
+
+
+                            <!--博客列表 start-->
+                            <div node-type="homefeed">
+
+                                <!--feed list-->
+                                <div class="WB_feed WB_feed_v3 WB_feed_v4" pagenum="1" node-type="feed_list"
+                                     unread_mode="1">
+
+                                    <div mrid="rid=0_0_8_3068164511292999578" tbinfo="ouid=2655927610"
+                                         diss-data="group_source=group_all&amp;rid=0_0_8_3068164511292999578"
+                                         class="WB_cardwrap WB_feed_type S_bg2 WB_feed_like" mid="4201990403521686"
+                                         action-type="feed_list_item">
+                                        <div class="WB_feed_detail clearfix" node-type="feed_content">
+
+                                            <div class="WB_detail">
+                                                <div class="WB_info">
+                                                   <!--<a>用户地址</a>--> </div>
+
+                                                <div class="WB_text W_f14" node-type="feed_list_content">
+                                                <%= contentArr[i] %>
+
+                                                </div>
+                                                <div class="WB_expand_media_box " style="display: none;"
+                                                     node-type="feed_list_media_disp"></div>
+
+
+                                            </div>
+
+                                            <!-- minzheng add part 3 -->
+                                            <div class="WB_feed_handle">
+                                                <div class="WB_handle">
+                                                    <ul class="WB_row_line WB_row_r4 clearfix S_line2">
+
+                                                        <li>
+                                                            <!--cuslike用于前端判断是否显示个性赞，1:显示
+                                                            <a href="javascript:void(0);" class="S_txt2"
+                                                               title="打赏"><span class="pos"><span class="line S_line1">
+                                                                <span node-type="like_status" class=""><em>打赏</em></span>                    </span></span></a>
+                                                        -->
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div node-type="feed_list_repeat" class="WB_feed_repeat S_bg1"
+                                                 style="display:none;"></div>
+                                        </div>
+
+                                </div>
+                            </div>
+                        </div>
+                            <!--博客列表 end-->
+                              <%}%>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
