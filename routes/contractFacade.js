@@ -1,28 +1,22 @@
 var Web3 = require('web3');
 
+
 //合同ABI
 
 const blogFacadeAbi= require("../ABI/BlogFacade.json");
 
 
-//ETH 节点地址
-const nodeAddress = process.env.FULL_NODE_URL || "http://101.201.148.102:8545";
-
 //合约地址
-const blogFacadeAddress = "0xae9011270d3aa5583e10de5b96bc21d129e3d184";
+const blogFacadeAddress = "0x4dac04d647d2cfc67f1034fcdca11ccd50c51175";
 
 
-//web3初始化
-
-
-const web3 = new Web3(new Web3.providers.HttpProvider(nodeAddress));
+const web3 = new Web3(new Web3.providers.HttpProvider( "http://101.201.148.102:8545"));
 //合约实例
 const facadeInstance = new web3.eth.Contract(blogFacadeAbi.abi,blogFacadeAddress);
 
 
-const from ="0x4af8f99f80c51193bbabf1aca8c3a6de2bf03c7e";
-const to ="0x9d94be74e4ff7344054aee36ad7ff05145d4be28";
-
+const from ="0x9ab3a035722c35dc4e14160e30cf10ae2fd656dc";
+const to ="0xdd16491791b906f98725ecff9c6cb04f3d5b4dc7";
 
 //根据索引查询博客
 async function getBlog(index)
@@ -36,7 +30,11 @@ async function getBlog(index)
 //发布博客
 async function publish(from,owner,content,value){
 
-   return await facadeInstance.methods._publish(owner,content,value)
+    //解锁账户
+    // var lockAccount = await web3.eth.personal.unlockAccount(from,"123456",1000);
+    // console.log("lockAccount==>"+lockAccount);
+
+    return await facadeInstance.methods._publish(owner,content,value)
         .send({from:from,gas: 20000000, gasPrice: '20000000000'}).then(console.log);
        // .then(data => true)
        // .catch(err => {
