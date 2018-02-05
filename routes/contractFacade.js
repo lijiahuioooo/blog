@@ -6,7 +6,7 @@ const blogFacadeAbi= require("../ABI/BlogFacade.json");
 
 
 //ETH 节点地址
-const nodeAddress = process.env.FULL_NODE_URL || "http://10.45.144.209:8545";
+const nodeAddress = process.env.FULL_NODE_URL || "http://101.201.148.102:8545";
 
 //合约地址
 const blogFacadeAddress = "0xae9011270d3aa5583e10de5b96bc21d129e3d184";
