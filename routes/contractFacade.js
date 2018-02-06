@@ -7,7 +7,7 @@ const blogFacadeAbi= require("../ABI/BlogFacade.json");
 
 
 //合约地址
-const blogFacadeAddress = "0x4dac04d647d2cfc67f1034fcdca11ccd50c51175";
+const blogFacadeAddress = "0x8c478cfac0f58ba157872f4b23886c8d3393a9ee";
 
 
 const web3 = new Web3(new Web3.providers.HttpProvider( "http://101.201.148.102:8545"));
@@ -15,8 +15,8 @@ const web3 = new Web3(new Web3.providers.HttpProvider( "http://101.201.148.102:8
 const facadeInstance = new web3.eth.Contract(blogFacadeAbi.abi,blogFacadeAddress);
 
 
-const from ="0x9ab3a035722c35dc4e14160e30cf10ae2fd656dc";
-const to ="0xdd16491791b906f98725ecff9c6cb04f3d5b4dc7";
+const from ="0xbeb4716ac4c51fa6051b7442dcbb2a61eeecad00";
+const to ="0x8e7cad12796dea7123f52889ea22a225639af425";
 
 //根据索引查询博客
 async function getBlog(index)

@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,15 +8,15 @@
     <meta name="author" content="">
 
     <title>
-
+      
         Home · Application theme · Official Bootstrap Themes
-
+      
     </title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
-    <link href="/css/toolkit.css" rel="stylesheet">
-
-    <link href="/css/application.css" rel="stylesheet">
+    <link href="public/css/toolkit.css" rel="stylesheet">
+    
+    <link href="public/css/application.css" rel="stylesheet">
 
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
@@ -31,7 +32,7 @@
 
 
 <body class="bjy">
-
+  
 
 
 <div class="bkk" id="app-growl"></div>
@@ -39,7 +40,7 @@
 <nav class="ck mo zq mt qh app-navbar">
 
   <a class="e" href="index.html">
-    <img src="/img/brand-white.png" alt="brand">
+    <img src="public/img/brand-white.png" alt="brand">
   </a>
 
   <button class="mk blk se" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,10 +49,18 @@
 
   <div class="collapse f" id="navbarResponsive">
     <ul class="navbar-nav adn">
-
-
-
-
+      <li class="md active">
+        <a class="mb" href="index.html">Home <span class="zt">(current)</span></a>
+      </li>
+      <li class="md">
+        <a class="mb" href="profile/index.html">Profile</a>
+      </li>
+      <li class="md">
+        <a class="mb" data-toggle="modal" href="#msgModal">Messages</a>
+      </li>
+      <li class="md">
+        <a class="mb" href="docs/index.html">Docs</a>
+      </li>
 
       <li class="md se">
         <a class="mb" href="notifications/index.html">Notifications</a>
@@ -66,7 +75,7 @@
     </ul>
 
     <form class="kl zc ro sk">
-      <input class="form-control" type="text" data-action="grow" placeholder="Search" style="width: 300px;">
+      <input class="form-control" type="text" data-action="grow" placeholder="Search">
     </form>
 
     <ul id="#js-popoverContent" class="nav navbar-nav zc aah ro sk">
@@ -77,7 +86,7 @@
       </li>
       <li class="md aax">
         <button class="cg bll blm bkf" data-toggle="popover" data-original-title="" title="">
-          <img class="rl" src="/img/avatar-dhg.png">
+          <img class="rl" src="public/img/avatar-dhg.png">
         </button>
       </li>
     </ul>
@@ -102,7 +111,7 @@
           <div class="bkt cj ca js-msgGroup">
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-fat.jpg">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-fat.jpg">
                 <div class="or">
                   <strong>Jacob Thornton</strong> and <strong>1 other</strong>
                   <div class="bld">
@@ -113,7 +122,7 @@
             </a>
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-mdo.png">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-mdo.png">
                 <div class="or">
                   <strong>Mark Otto</strong> and <strong>3 others</strong>
                   <div class="bld">
@@ -124,7 +133,7 @@
             </a>
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-dhg.png">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-dhg.png">
                 <div class="or">
                   <strong>Dave Gamache</strong>
                   <div class="bld">
@@ -135,7 +144,7 @@
             </a>
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-fat.jpg">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-fat.jpg">
                 <div class="or">
                   <strong>Jacob Thornton</strong> and <strong>1 other</strong>
                   <div class="bld">
@@ -146,7 +155,7 @@
             </a>
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-mdo.png">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-mdo.png">
                 <div class="or">
                   <strong>Mark Otto</strong> and <strong>3 others</strong>
                   <div class="bld">
@@ -157,7 +166,7 @@
             </a>
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-dhg.png">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-dhg.png">
                 <div class="or">
                   <strong>Dave Gamache</strong>
                   <div class="bld">
@@ -168,7 +177,7 @@
             </a>
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-fat.jpg">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-fat.jpg">
                 <div class="or">
                   <strong>Jacob Thornton</strong> and <strong>1 other</strong>
                   <div class="bld">
@@ -179,7 +188,7 @@
             </a>
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-mdo.png">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-mdo.png">
                 <div class="or">
                   <strong>Mark Otto</strong> and <strong>3 others</strong>
                   <div class="bld">
@@ -190,7 +199,7 @@
             </a>
             <a href="#" class="b os">
               <div class="oq">
-                <img class="rl bkp ru uk abc" src="/img/avatar-dhg.png">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-dhg.png">
                 <div class="or">
                   <strong>Dave Gamache</strong>
                   <div class="bld">
@@ -214,11 +223,11 @@
                     </small>
                   </div>
                 </div>
-                <img class="rl bkp ru uk abe" src="/img/avatar-dhg.png">
+                <img class="rl bkp ru uk abe" src="public/img/avatar-dhg.png">
               </li>
 
               <li class="oq abk">
-                <img class="rl bkp ru uk abc" src="/img/avatar-fat.jpg">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-fat.jpg">
                 <div class="or">
                   <div class="bla">
                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
@@ -238,7 +247,7 @@
               </li>
 
               <li class="oq abk">
-                <img class="rl bkp ru uk abc" src="/img/avatar-mdo.png">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-mdo.png">
                 <div class="or">
                   <div class="bla">
                    Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur.
@@ -265,11 +274,11 @@
                     </small>
                   </div>
                 </div>
-                <img class="rl bkp ru uk abe" src="/img/avatar-dhg.png">
+                <img class="rl bkp ru uk abe" src="public/img/avatar-dhg.png">
               </li>
 
               <li class="oq abk">
-                <img class="rl bkp ru uk abc" src="/img/avatar-fat.jpg">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-fat.jpg">
                 <div class="or">
                   <div class="bla">
                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
@@ -289,7 +298,7 @@
               </li>
 
               <li class="oq abk">
-                <img class="rl bkp ru uk abc" src="/img/avatar-mdo.png">
+                <img class="rl bkp ru uk abc" src="public/img/avatar-mdo.png">
                 <div class="or">
                   <div class="bla">
                    Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur.
@@ -325,7 +334,7 @@
           <ul class="bkt cj ca">
             <li class="b">
               <div class="oq zy">
-                <img class="bkp ru uk abc" src="/img/avatar-fat.jpg">
+                <img class="bkp ru uk abc" src="public/img/avatar-fat.jpg">
                 <div class="or">
                   <button class="cg kt ll zc">
                     <span class="c blp"></span> Follow
@@ -337,7 +346,7 @@
             </li>
             <li class="b">
               <div class="oq zy">
-                <img class="bkp ru uk abc" src="/img/avatar-dhg.png">
+                <img class="bkp ru uk abc" src="public/img/avatar-dhg.png">
                 <div class="or">
                   <button class="cg kt ll zc">
                     <span class="c blp"></span> Follow
@@ -349,7 +358,7 @@
             </li>
             <li class="b">
               <div class="oq zy">
-                <img class="bkp ru uk abc" src="/img/avatar-mdo.png">
+                <img class="bkp ru uk abc" src="public/img/avatar-mdo.png">
                 <div class="or">
                   <button class="cg kt ll zc">
                     <span class="c blp"></span> Follow
@@ -371,10 +380,10 @@
   <div class="dp">
     <div class="fj">
       <div class="mu blf abk">
-        <div class="na" style="background-image: url(/img/iceland.jpg);"></div>
+        <div class="na" style="background-image: url(public/img/iceland.jpg);"></div>
         <div class="mv arx">
           <a href="profile/index.html">
-            <img class="blg" src="/img/avatar-dhg.png">
+            <img class="blg" src="public/img/avatar-dhg.png">
           </a>
 
           <h6 class="mw">
@@ -387,7 +396,7 @@
             <li class="bli">
               <a href="#userModal" class="bjx" data-toggle="modal">
                 Friends
-                <h6 class="aal"><%=balance%></h6>
+                <h6 class="aal">12M</h6>
               </a>
             </li>
 
@@ -401,10 +410,36 @@
         </div>
       </div>
 
-
+      <div class="mu sh sp abk">
+        <div class="mv">
+          <h6 class="abd">About <small>· <a href="#">Edit</a></small></h6>
+          <ul class="dc atd">
+            <li><span class="asz h awk abc"></span>Went to <a href="#">Oh, Canada</a>
+            </li><li><span class="asz h biz abc"></span>Became friends with <a href="#">Obama</a>
+            </li><li><span class="asz h bax abc"></span>Worked at <a href="#">Github</a>
+            </li><li><span class="asz h bbn abc"></span>Lives in <a href="#">San Francisco, CA</a>
+            </li><li><span class="asz h bcw abc"></span>From <a href="#">Seattle, WA</a>
+          </li></ul>
+        </div>
+      </div>
 
        <div class="mu sh sp abk">
-
+        <div class="mv">
+          <h6 class="abd">Photos <small>· <a href="#">Edit</a></small></h6>
+          <div data-grid="images" data-target-height="150"><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+              <img data-width="640" data-height="640" data-action="zoom" src="public/img/instagram_5.jpg" style="width: 114px; height: 115px;">
+            </div><div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+              <img data-width="640" data-height="640" data-action="zoom" src="public/img/instagram_6.jpg" style="width: 114px; height: 115px;">
+            </div><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+              <img data-width="640" data-height="640" data-action="zoom" src="public/img/instagram_7.jpg" style="width: 114px; height: 115px;">
+            </div><div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+              <img data-width="640" data-height="640" data-action="zoom" src="public/img/instagram_8.jpg" style="width: 114px; height: 115px;">
+            </div><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+              <img data-width="640" data-height="640" data-action="zoom" src="public/img/instagram_9.jpg" style="width: 114px; height: 115px;">
+            </div><div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+              <img data-width="640" data-height="640" data-action="zoom" src="public/img/instagram_10.jpg" style="width: 114px; height: 115px;">
+            </div></div>
+        </div>
       </div>
     </div>
 
@@ -414,9 +449,7 @@
 
         <li class="oq b acx">
           <div class="input-group">
-          <form method="post" action="" id="fromId">
             <input type="text" class="form-control" placeholder="Message">
-            </form>
             <div class="jq">
               <button type="button" class="cg kt uo">
                 <span class="h awl"></span>
@@ -424,10 +457,9 @@
             </div>
           </div>
         </li>
-        <!--循环开始-->
-        <% for(var i=0;i<=contentArr.length;i++){%>
+
         <li class="oq b acx">
-          <img class="bkp ru uk abc" src="/img/avatar-dhg.png">
+          <img class="bkp ru uk abc" src="public/img/avatar-dhg.png">
           <div class="or">
             <div class="bky">
               <small class="zc asz">4 min</small>
@@ -435,17 +467,17 @@
             </div>
 
             <p>
-           <%=contentArr[i]%>
+              Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </p>
 
             <div class="bkv" data-grid="images"><div style="display: inline-block; margin-bottom: 10px; margin-right: 10px; vertical-align: bottom;">
-                <img data-action="zoom" data-width="1050" data-height="700" src="/img/unsplash_1.jpg" style="width: 368px; height: 246px;">
+                <img data-action="zoom" data-width="1050" data-height="700" src="public/img/unsplash_1.jpg" style="width: 273px; height: 182px;">
               </div><div style="display: inline-block; margin-bottom: 10px; margin-right: 0px; vertical-align: bottom;">
-                <img data-action="zoom" data-width="640" data-height="640" src="/img/instagram_1.jpg" style="width: 246px; height: 246px;">
+                <img data-action="zoom" data-width="640" data-height="640" src="public/img/instagram_1.jpg" style="width: 182px; height: 182px;">
               </div><div style="display: inline-block; margin-bottom: 10px; margin-right: 10px; vertical-align: bottom;">
-                <img data-action="zoom" data-width="640" data-height="640" src="/img/instagram_13.jpg" style="width: 245px; height: 246px;">
+                <img data-action="zoom" data-width="640" data-height="640" src="public/img/instagram_13.jpg" style="width: 181px; height: 182px;">
               </div><div style="display: inline-block; margin-bottom: 10px; margin-right: 0px; vertical-align: bottom;">
-                <img data-action="zoom" data-width="1048" data-height="700" src="/img/unsplash_2.jpg" style="width: 369px; height: 246px;">
+                <img data-action="zoom" data-width="1048" data-height="700" src="public/img/unsplash_2.jpg" style="width: 274px; height: 182px;">
               </div></div>
           <p class="info">
               <span class="right">
@@ -461,44 +493,177 @@
               <a href="javascript:;" title="赞">(14)</a></span>
               <span> <a class="date"><em>2017-12-25 18:06</em></a></span>
             </p>
-
+            <ul class="bkt aaw">
+              <li class="oq abd">
+                <img class="bkp ru uk abc" src="public/img/avatar-fat.jpg">
+                <div class="or">
+                  <strong>Jacon Thornton: </strong>
+                  Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+                </div>
+              </li>
+              <li class="oq">
+                <img class="bkp ru uk abc" src="public/img/avatar-mdo.png">
+                <div class="or">
+                  <strong>Mark Otto: </strong>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                </div>
+              </li>
+            </ul>
           </div>
         </li>
-         <%}%>
-         <!--循环结束-->
 
+        <li class="oq b acx">
+          <img class="bkp ru uk abc" src="public/img/avatar-fat.jpg">
+          <div class="or">
+            <div class="bla">
+              <div class="bky">
+                <small class="zc asz">12 min</small>
+                <h6>Jacob Thornton</h6>
+              </div>
+              <p>
+                Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <p class="info">
+              <span class="right">
+              <!-- 评论/转发 -->
+              <a event-node="comment" href="javascript:void(0)">Reply (73)
+              </a>
+              <!-- 转发 -->
+              <i class="vline">|</i>
+              <a event-node="open_share" href="javascript:void(0);">retweet&nbsp;(1)</a>
+                <!-- 收藏 -->
+              <i class="vline">|</i>
+              <a href="javascript:;" rel="add">Like</a>
+              <a href="javascript:;" title="赞">(14)</a></span>
+              <span> <a class="date"><em>2017-12-25 18:06</em></a></span>
+            </p>
+          </div>
+        </li>
+
+
+        <li class="oq b acx">
+          <img class="bkp ru uk abc" src="public/img/avatar-mdo.png">
+          <div class="or">
+            <div class="bky">
+              <small class="zc asz">34 min</small>
+              <h6>Mark Otto</h6>
+            </div>
+
+            <p>
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+
+            <div class="bkv" data-grid="images"><img style="display: inline-block; width: 466px; height: 451px; margin-bottom: 10px; margin-right: 0px; vertical-align: bottom;" data-width="640" data-height="640" data-action="zoom" src="public/img/instagram_3.jpg"></div>
+            <p class="info">
+              <span class="right">
+              <!-- 评论/转发 -->
+              <a event-node="comment" href="javascript:void(0)">Reply (73)
+              </a>
+              <!-- 转发 -->
+              <i class="vline">|</i>
+              <a event-node="open_share" href="javascript:void(0);">retweet&nbsp;(1)</a>
+                <!-- 收藏 -->
+              <i class="vline">|</i>
+              <a href="javascript:;" rel="add">Like</a>
+              <a href="javascript:;" title="赞">(14)</a></span>
+              <span> <a class="date"><em>2017-12-25 18:06</em></a></span>
+            </p>
+
+            <ul class="bkt">
+              <li class="oq">
+                <img class="bkp ru uk abc" src="public/img/avatar-dhg.png">
+                <div class="or">
+                  <strong>Dave Gamache: </strong>
+                  Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </div>
     <div class="fj">
-
+      <div class="alert oj alert-dismissible ro sp" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <a class="oe" href="profile/index.html">Visit your profile!</a> Check your self, you aren't looking well.
+      </div>
 
       <div class="mu abk ro sp">
         <div class="mv">
           <h6 class="abd">Sponsored</h6>
-          <div data-grid="images" data-target-height="150"><img class="bkp" data-width="640" data-height="640" data-action="zoom" src="/img/instagram_2.jpg" style="width: 0px; height: 0px; margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;"></div>
+          <div data-grid="images" data-target-height="150"><img class="bkp" data-width="640" data-height="640" data-action="zoom" src="public/img/instagram_2.jpg" style="width: 239px; height: 225px; margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;"></div>
           <p><strong>It might be time to visit Iceland.</strong> Iceland is so chill, and everything looks cool here. Also, we heard the people are pretty nice. What are you waiting for?</p>
           <button class="cg la ll">Buy a ticket</button>
         </div>
       </div>
 
-
+      <div class="mu abk ro sp">
+        <div class="mv">
+        <h6 class="abd">Likes <small>· <a href="#">View All</a></small></h6>
+        <ul class="bkt bku">
+          <li class="oq aaw">
+            <img class="bkp ru uk abc" src="public/img/avatar-fat.jpg">
+            <div class="or">
+              <strong>Jacob Thornton</strong> @fat
+              <div class="bkx">
+                <button class="cg la ll">
+                  <span class="h auf"></span> Follow</button>
+              </div>
+            </div>
+          </li>
+           <li class="oq">
+            <a class="blq" href="#">
+              <img class="bkp ru uk abc" src="public/img/avatar-mdo.png">
+            </a>
+            <div class="or">
+              <strong>Mark Otto</strong> @mdo
+              <div class="bkx">
+                <button class="cg la ll">
+                  <span class="h auf"></span> Follow</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+        <div class="nb">
+          Dave really likes these nerds, no one knows why though.
+        </div>
+      </div>
 
       <div class="mu blj">
-
+        <div class="mv">
+          © 2018 Bootstrap
+          <a href="#">About</a>
+          <a href="#">Help</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Ads </a>
+          <a href="#">Info</a>
+          <a href="#">Brand</a>
+          <a href="#">Blog</a>
+          <a href="#">Status</a>
+          <a href="#">Apps</a>
+          <a href="#">Jobs</a>
+          <a href="#">Advertise</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/chart.js"></script>
-    <script src="/js/toolkit.js"></script>
-    <script src="/js/application.js"></script>
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/popper.min.js"></script>
+    <script src="public/js/chart.js"></script>
+    <script src="public/js/toolkit.js"></script>
+    <script src="public/js/application.js"></script>
     <script>
       // execute/clear BS loaders for docs
       $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
     </script>
-</body>
-</html>
+  
+
+
+</body></html>
