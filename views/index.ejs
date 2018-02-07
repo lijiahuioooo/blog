@@ -431,21 +431,24 @@
          </form>
          </li>
         <!--循环开始-->
-        <% for(var i=0;i<contentArr.length;i++){%>
+        <% for(var i=0;i<blogs.length;i++){%>
         <li class="oq b acx">
           <img class="bkp ru uk abc" src="/img/avatar-dhg.png">
           <div class="or">
             <div class="bky">
-              <small class="zc asz">4 min</small>
               <h6>Dave Gamache</h6>
             </div>
             <p>
-           <%=contentArr[i]%>
+           <%=blogs[i].content%>
             </p>
+             <p class="info">
+                                   <span> <a class="date"><em> <%=blogs[i].createTime%></em></a></span>
+                                 </p>
           </div>
         </li>
          <%}%>
          <!--循环结束-->
+
       </ul>
     </div>
     <div class="fj">

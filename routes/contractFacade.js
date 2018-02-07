@@ -7,7 +7,7 @@ const blogFacadeAbi= require("../ABI/BlogFacade.json");
 
 
 //合约地址
-const blogFacadeAddress = "0x8c478cfac0f58ba157872f4b23886c8d3393a9ee";
+const blogFacadeAddress = "0x2dffa53c99a4386fb4122124b70376c50163c465";
 
 
 const web3 = new Web3(new Web3.providers.HttpProvider( "http://101.201.148.102:8545"));
@@ -22,8 +22,8 @@ const to ="0x8e7cad12796dea7123f52889ea22a225639af425";
 async function getBlog(index)
 
 {
-    const content = await facadeInstance.methods._getBlog(index).call();
-    return content;
+    const blog = await facadeInstance.methods._getBlog(index).call();
+    return blog;
 
 }
 

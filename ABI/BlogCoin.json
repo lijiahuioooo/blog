@@ -172,7 +172,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 335,
+          "SourceUnit": 342,
           "absolutePath": "/Users/lijiahui/git_project/blog/contracts/BlogToken.sol",
           "file": "./BlogToken.sol",
           "scope": 97,
@@ -188,14 +188,14 @@
       {
         "attributes": {
           "contractDependencies": [
-            334
+            341
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             96,
-            334
+            341
           ],
           "name": "BlogCoin",
           "scope": 97
@@ -212,7 +212,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "BlogToken",
-                  "referencedDeclaration": 334,
+                  "referencedDeclaration": 341,
                   "type": "contract BlogToken"
                 },
                 "id": 70,
@@ -409,7 +409,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 216,
+                              "referencedDeclaration": 223,
                               "type": "uint256",
                               "value": "totalSupply_"
                             },
@@ -470,7 +470,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 206,
+                                  "referencedDeclaration": 213,
                                   "type": "mapping(address => uint256)",
                                   "value": "balances"
                                 },
@@ -496,7 +496,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 403,
+                                      "referencedDeclaration": 410,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -566,9 +566,9 @@
     "1517834970976": {
       "events": {},
       "links": {},
-      "address": "0xdcb5e48b1a172546f361a8c8b0e3f57a95f7000b"
+      "address": "0xde439bdee0ca9469461baad30029dc0ce4d8f903"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-02-06T02:52:47.775Z"
+  "updatedAt": "2018-02-07T09:42:54.469Z"
 }

@@ -27,10 +27,11 @@ contract BlogFacade is BlogBase,BlogCoin{
     //获取博客
 
     function _getBlog(uint index)
-    public view returns(string content){
+    public view returns(string content,uint64 createTime){
 
         Blog storage blog = blogs[index];
         content = blog.content;
+        createTime=blog.createTime;
 
     }
 
