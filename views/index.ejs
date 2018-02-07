@@ -27,6 +27,19 @@
       }
     </style>
 
+    <script type="text/javascript">
+
+         function submit(){
+
+              var content = document.getElementById('inputId').value.trim();
+              if(content == ''){
+               alert('发布内容不能为空！');
+              }
+             document.getElementById('fromId').submit();
+         }
+
+      </script>
+
   </head>
 
 
@@ -414,11 +427,12 @@
 
         <li class="oq b acx">
           <div class="input-group">
-          <form method="post" action="" id="fromId">
-            <input type="text" class="form-control" placeholder="Message">
+
+           <form method="post" action="publish" id="fromId" class="form-inline">
+             <input type="text" class="form-control" placeholder="Message" id="inputId">
             </form>
             <div class="jq">
-              <button type="button" class="cg kt uo">
+              <button type="button" class="cg kt uo" onclick="submit()">
                 <span class="h awl"></span>
               </button>
             </div>
