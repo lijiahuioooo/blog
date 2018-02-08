@@ -16,6 +16,7 @@
     <link href="/css/toolkit.css" rel="stylesheet">
 
     <link href="/css/application.css" rel="stylesheet">
+    <link href="/quill/quill.snow.css" rel="stylesheet">
 
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
@@ -25,20 +26,29 @@
         min-width: 100%;
         *width: 100%;
       }
+      .ql-toolbar.ql-snow {
+        border: none;
+      }
+      .ql-snow.ql-toolbar button.submit {
+        width: 100px;
+        height: 30px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        color: #fff;
+        background-color: #3097D1;
+        user-select: none;
+        border-color: #3097D1;
+        padding: 0.30rem 0.5rem;
+        font-size: 0.875rem;
+        border: 1px solid transparent;
+      }
+      .ql-toolbar.ql-snow .ql-formats:last-child {
+        margin-right: 0;
+      }
     </style>
-
-    <script type="text/javascript">
-
-         function submit(){
-
-              var content = document.getElementById('inputId').value.trim();
-              if(content == ''){
-               alert('发布内容不能为空！');
-              }
-             document.getElementById('fromId').submit();
-         }
-
-      </script>
 
   </head>
 
@@ -419,16 +429,33 @@
       <ul class="ca bkt bku abk">
 
        <li class="oq b acx">
-         <form class="form-inline" style="width: 100%" id="formId" method="post" action="publish">
-           <div class="input-group">
-             <input type="text" class="form-control" placeholder="Message" name="content">
-             <div class="jq">
-               <button type="button" class="cg kt uo" onclick="submit()">
-                 <span class="h awl"></span>
-               </button>
-             </div>
+         <!--<form class="form-inline" style="width: 100%" id="formId" method="post" action="publish">-->
+           <!--<div class="input-group">-->
+             <!--<input type="text" class="form-control" placeholder="Message" name="content">-->
+             <!--<div class="jq">-->
+               <!--<button type="button" class="cg kt uo" onclick="submit()">-->
+                 <!--<span class="h awl"></span>-->
+               <!--</button>-->
+             <!--</div>-->
+           <!--</div>-->
+         <!--</form>-->
+         <div style="width: 100%;height: 80px;margin-bottom: 30px;">
+           <div id="editor-container"></div>
+           <div id="toolbar-container">
+              <span class="ql-formats">
+                <button class="ql-link"></button>
+              </span>
+             <span class="ql-formats">
+                <button class="ql-image"></button>
+              </span>
+             <span class="ql-formats">
+                <button class="ql-video"></button>
+              </span>
+             <span class="ql-formats" style="float: right;">
+                <button class="cg la ll submit" onclick="submit()">发送</button>
+              </span>
            </div>
-         </form>
+         </div>
          </li>
         <!--循环开始-->
         <% for(var i=0;i<blogs.length;i++){%>
@@ -478,9 +505,37 @@
     <script src="/js/chart.js"></script>
     <script src="/js/toolkit.js"></script>
     <script src="/js/application.js"></script>
+    <script src="/quill/quill.min.js"></script>
     <script>
       // execute/clear BS loaders for docs
       $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+
+      var quill = new Quill('#editor-container', {
+          modules: {
+              toolbar: '#toolbar-container'
+          },
+          placeholder: 'Compose an epic...',
+          theme: 'snow'
+      });
+
+      function submit(){
+//        var content = document.getElementById('inputId').value.trim();
+//        document.getElementById('fromId').submit();
+
+      	var content = quill.container.firstChild.innerHTML;
+      	console.log(content);
+        if(content == ''){
+            alert('发布内容不能为空！');
+        }
+
+        var action = 'publish';
+		var formData = new FormData();
+        formData.append("content", content);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", action);
+        xhr.send(formData);
+      }
     </script>
 </body>
 </html>
