@@ -538,15 +538,14 @@
         if(content == ''){
             alert('发布内容不能为空！');
         }
-
-        var action = 'publish';
-		var formData = new FormData();
-        formData.append("content", content);
-
-        var xhr = new XMLHttpRequest();
-        xhr.onload = reloadList;
-        xhr.open("POST", action);
-        xhr.send(formData);
+        $.ajax({
+            method: "POST",
+            url: "publish",
+            data: { content:content}
+        })
+        .done(function( msg ) {
+            reloadList();
+        });
       }
     </script>
 </body>
