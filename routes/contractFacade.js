@@ -36,11 +36,6 @@ async function publish(from,owner,content,value){
 
     return await facadeInstance.methods._publish(owner,content,value)
         .send({from:from,gas: 20000000, gasPrice: '20000000000'}).then(console.log);
-       // .then(data => true)
-       // .catch(err => {
-       //     console.log("publish_error =>"+err);
-       //     return false;
-       // });
 }
 
 //查询指定账户余额
