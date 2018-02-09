@@ -518,6 +518,11 @@
           theme: 'snow'
       });
 
+      // 重新加载页面，因为demo所以通过直接刷新页面来做到
+      function reloadList() {
+      	location.href='/index?t='+(new Date()).getTime();
+      }
+
       function submit(){
 //        var content = document.getElementById('inputId').value.trim();
 //        document.getElementById('fromId').submit();
@@ -533,6 +538,7 @@
         formData.append("content", content);
 
         var xhr = new XMLHttpRequest();
+        xhr.onload = reloadList;
         xhr.open("POST", action);
         xhr.send(formData);
       }
