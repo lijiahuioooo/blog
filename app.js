@@ -6,6 +6,8 @@ var app = express();
 
 var index = require('./routes/index');
 var publish = require('./routes/publish');
+var ipfsAdd = require('./routes/ipfsAdd.js');
+var ipfsCat = require('./routes/ipfsCat.js');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -15,6 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/index', index);
 app.use('/publish', publish);
+app.use('/ipfs_add', ipfsAdd);
+app.use('/ipfs_cat', ipfsCat);
 
 
 module.exports = app;

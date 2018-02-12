@@ -26,25 +26,11 @@ contract BlogFacade is BlogBase,BlogCoin{
 
     //获取博客
 
-    function _getBlog(uint index)
-    public view returns(string content,uint64 createTime){
+    function _getBlog(address owner)
+    public view returns(string content){
 
-        Blog storage blog = blogs[index];
-        content = blog.content;
-        createTime=blog.createTime;
-
+        content = ownerToBlogHash(owner);
     }
 
-    function _getBlogIndex(address owner)
-    public view returns(uint256[]){
-        uint256[] memory blogIndexArr = ownerToBlogIndex[owner];
-        return blogIndexArr;
-    }
-
-    //博客总数
-    function _blogTotal()
-    public view returns(uint total){
-        total = blogs.length;
-    }
 
 }

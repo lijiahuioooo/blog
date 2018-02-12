@@ -19,11 +19,11 @@ const from ="0xbeb4716ac4c51fa6051b7442dcbb2a61eeecad00";
 const to ="0x8e7cad12796dea7123f52889ea22a225639af425";
 
 //根据索引查询博客
-async function getBlog(index)
+async function getBlog(owner)
 
 {
-    const blog = await facadeInstance.methods._getBlog(index).call();
-    return blog;
+    const blogList = await facadeInstance.methods._getBlog(owner).call();
+    return blogList;
 
 }
 

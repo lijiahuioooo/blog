@@ -14,8 +14,8 @@ router.get('/', async function (req, res) {
         blog.createTime =moment.unix(blog.createTime).format("YYYY-MM-DD HH:mm");
         blogs.push(blog);
     }
-
     const balance = await facade.balance(facade.to)
-    res.render('index', {blogs:blogs,balance:balance})
+    res.render('index', {blogs:blogs,balance:balance});
+
 })
 module.exports = router;
