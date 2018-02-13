@@ -7,7 +7,7 @@ const blogFacadeAbi= require("../ABI/BlogFacade.json");
 
 
 //合约地址
-const blogFacadeAddress = "0x2dffa53c99a4386fb4122124b70376c50163c465";
+const blogFacadeAddress = "0xaa19f9e73c53b1ca1b4f2e5d070c82463f21b6e9";
 
 
 const web3 = new Web3(new Web3.providers.HttpProvider( "http://101.201.148.102:8545"));

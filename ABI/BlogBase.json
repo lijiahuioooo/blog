@@ -9,7 +9,7 @@
           "type": "address"
         },
         {
-          "name": "_content",
+          "name": "data",
           "type": "string"
         }
       ],
@@ -25,53 +25,12 @@
         {
           "name": "",
           "type": "address"
-        },
-        {
-          "name": "",
-          "type": "uint256"
         }
       ],
-      "name": "ownerToBlogIndex",
+      "name": "ownerToBlogHash",
       "outputs": [
         {
           "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "getBlogsLength",
-      "outputs": [
-        {
-          "name": "len",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "name": "blogs",
-      "outputs": [
-        {
-          "name": "createTime",
-          "type": "uint64"
-        },
-        {
-          "name": "content",
           "type": "string"
         }
       ],
@@ -80,18 +39,18 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6105d18061001e6000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630badd472146100675780635a9f8f53146100e35780637ef1299a1461013957806380f052d814610162575b600080fd5b341561007257600080fd5b6100e1600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610236565b005b34156100ee57600080fd5b610123600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061034f565b6040518082815260200191505060405180910390f35b341561014457600080fd5b61014c610380565b6040518082815260200191505060405180910390f35b341561016d57600080fd5b610183600480803590602001909190505061038c565b604051808367ffffffffffffffff1667ffffffffffffffff168152602001806020018281038252838181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156102265780601f106101fb57610100808354040283529160200191610226565b820191906000526020600020905b81548152906001019060200180831161020957829003601f168201915b5050935050505060405180910390f35b61023e6103d2565b60008060408051908101604052804267ffffffffffffffff16815260200185815250925060016000805480600101828161027891906103fc565b9160005260206000209060020201600086909190915060008201518160000160006101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555060208201518160010190805190602001906102d992919061042e565b505050039150600160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020905080805480600101828161033391906104ae565b9160005260206000209001600084909190915055505050505050565b60016020528160005260406000208181548110151561036a57fe5b9060005260206000209001600091509150505481565b60008080549050905090565b60008181548110151561039b57fe5b90600052602060002090600202016000915090508060000160009054906101000a900467ffffffffffffffff169080600101905082565b6040805190810160405280600067ffffffffffffffff1681526020016103f66104da565b81525090565b8154818355818115116104295760020281600202836000526020600020918201910161042891906104ee565b5b505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046f57805160ff191683800117855561049d565b8280016001018555821561049d579182015b8281111561049c578251825591602001919060010190610481565b5b5090506104aa9190610538565b5090565b8154818355818115116104d5578183600052602060002091820191016104d49190610538565b5b505050565b602060405190810160405280600081525090565b61053591905b8082111561053157600080820160006101000a81549067ffffffffffffffff0219169055600182016000610528919061055d565b506002016104f4565b5090565b90565b61055a91905b8082111561055657600081600090555060010161053e565b5090565b90565b50805460018160011615610100020316600290046000825580601f1061058357506105a2565b601f0160209004906000526020600020908101906105a19190610538565b5b505600a165627a7a723058208f2acf63459c192355563542bbdd03d23a46d19c36a805d5bddafcade8f071ca0029",
-  "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630badd472146100675780635a9f8f53146100e35780637ef1299a1461013957806380f052d814610162575b600080fd5b341561007257600080fd5b6100e1600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610236565b005b34156100ee57600080fd5b610123600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061034f565b6040518082815260200191505060405180910390f35b341561014457600080fd5b61014c610380565b6040518082815260200191505060405180910390f35b341561016d57600080fd5b610183600480803590602001909190505061038c565b604051808367ffffffffffffffff1667ffffffffffffffff168152602001806020018281038252838181546001816001161561010002031660029004815260200191508054600181600116156101000203166002900480156102265780601f106101fb57610100808354040283529160200191610226565b820191906000526020600020905b81548152906001019060200180831161020957829003601f168201915b5050935050505060405180910390f35b61023e6103d2565b60008060408051908101604052804267ffffffffffffffff16815260200185815250925060016000805480600101828161027891906103fc565b9160005260206000209060020201600086909190915060008201518160000160006101000a81548167ffffffffffffffff021916908367ffffffffffffffff16021790555060208201518160010190805190602001906102d992919061042e565b505050039150600160008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020905080805480600101828161033391906104ae565b9160005260206000209001600084909190915055505050505050565b60016020528160005260406000208181548110151561036a57fe5b9060005260206000209001600091509150505481565b60008080549050905090565b60008181548110151561039b57fe5b90600052602060002090600202016000915090508060000160009054906101000a900467ffffffffffffffff169080600101905082565b6040805190810160405280600067ffffffffffffffff1681526020016103f66104da565b81525090565b8154818355818115116104295760020281600202836000526020600020918201910161042891906104ee565b5b505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061046f57805160ff191683800117855561049d565b8280016001018555821561049d579182015b8281111561049c578251825591602001919060010190610481565b5b5090506104aa9190610538565b5090565b8154818355818115116104d5578183600052602060002091820191016104d49190610538565b5b505050565b602060405190810160405280600081525090565b61053591905b8082111561053157600080820160006101000a81549067ffffffffffffffff0219169055600182016000610528919061055d565b506002016104f4565b5090565b90565b61055a91905b8082111561055657600081600090555060010161053e565b5090565b90565b50805460018160011615610100020316600290046000825580601f1061058357506105a2565b601f0160209004906000526020600020908101906105a19190610538565b5b505600a165627a7a723058208f2acf63459c192355563542bbdd03d23a46d19c36a805d5bddafcade8f071ca0029",
-  "sourceMap": "27:656:0:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "27:656:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:332;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;157:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;578:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;130:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:332;316:17;;:::i;:::-;433;484:20;336:87;;;;;;;;;374:3;336:87;;;;;;400:8;336:87;;;316:107;;473:1;453:5;:17;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;464:5;453:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;:21;433:41;;507:16;:23;524:5;507:23;;;;;;;;;;;;;;;484:46;;540:5;:24;;;;;;;;;;;:::i;:::-;;;;;;;;;;551:12;540:24;;;;;;;239:332;;;;;:::o;157:53::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;578:101::-;628:11;660:5;:12;;;;654:18;;578:101;:::o;130:20::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;27:656::-;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o",
-  "source": "pragma solidity ^0.4.18;\n\n\ncontract BlogBase {\n\n\n    struct Blog{\n\n        uint64 createTime;\n\n        string content;\n    }\n\n    Blog[]  public blogs;\n\n    mapping(address => uint256[]) public ownerToBlogIndex;\n\n    /// 创建博客\n\n    function _createBlog(address owner,string _content)\n    public\n    {\n        Blog memory _blog = Blog({\n            createTime: uint64(now),\n            content:_content\n            });\n        uint newBlogIndex = blogs.push(_blog) - 1;\n        uint[] storage index = ownerToBlogIndex[owner];\n        index.push(newBlogIndex);\n    }\n\n\n    function getBlogsLength()\n    public view returns(uint256 len)\n    {\n       len = blogs.length;\n    }\n\n\n}",
+  "bytecode": "0x6060604052341561000f57600080fd5b6103578061001e6000396000f30060606040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630badd47214610051578063c75fb446146100cd575b600080fd5b341561005c57600080fd5b6100cb600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190505061017f565b005b34156100d857600080fd5b610104600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506101d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610144578082015181840152602081019050610129565b50505050905090810190601f1680156101715780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002090805190602001906101d1929190610286565b505050565b60006020528060005260406000206000915090508054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561027e5780601f106102535761010080835404028352916020019161027e565b820191906000526020600020905b81548152906001019060200180831161026157829003601f168201915b505050505081565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102c757805160ff19168380011785556102f5565b828001600101855582156102f5579182015b828111156102f45782518255916020019190600101906102d9565b5b5090506103029190610306565b5090565b61032891905b8082111561032457600081600090555060010161030c565b5090565b905600a165627a7a723058204498eafa8041b8ddb92186f0b13c7009a3e8a83f75b570f992df2182925234b40029",
+  "deployedBytecode": "0x60606040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630badd47214610051578063c75fb446146100cd575b600080fd5b341561005c57600080fd5b6100cb600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190505061017f565b005b34156100d857600080fd5b610104600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506101d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610144578082015181840152602081019050610129565b50505050905090810190601f1680156101715780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002090805190602001906101d1929190610286565b505050565b60006020528060005260406000206000915090508054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561027e5780601f106102535761010080835404028352916020019161027e565b820191906000526020600020905b81548152906001019060200180831161026157829003601f168201915b505050505081565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102c757805160ff19168380011785556102f5565b828001600101855582156102f5579182015b828111156102f45782518255916020019190600101906102d9565b5b5090506103029190610306565b5090565b61032891905b8082111561032457600081600090555060010161030c565b5090565b905600a165627a7a723058204498eafa8041b8ddb92186f0b13c7009a3e8a83f75b570f992df2182925234b40029",
+  "sourceMap": "27:216:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "27:216:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;130:110;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;53:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;130:110:0;229:4;204:15;:22;220:5;204:22;;;;;;;;;;;;;;;:29;;;;;;;;;;;;:::i;:::-;;130:110;;:::o;53:49::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;27:216::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\n\ncontract BlogBase {\n\n\n    mapping(address => string) public ownerToBlogHash;\n\n    // 创建博客\n\n    function _createBlog(address owner,string data)\n    public\n\n    {\n        ownerToBlogHash[owner] = data;\n    }\n\n}",
   "sourcePath": "/Users/lijiahui/git_project/blog/contracts/BlogBase.sol",
   "ast": {
     "attributes": {
       "absolutePath": "/Users/lijiahui/git_project/blog/contracts/BlogBase.sol",
       "exportedSymbols": {
         "BlogBase": [
-          66
+          20
         ]
       }
     },
@@ -121,131 +80,27 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            66
+            20
           ],
           "name": "BlogBase",
-          "scope": 67
+          "scope": 21
         },
         "children": [
           {
             "attributes": {
-              "canonicalName": "BlogBase.Blog",
-              "name": "Blog",
-              "scope": 66,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "attributes": {
-                  "constant": false,
-                  "name": "createTime",
-                  "scope": 6,
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "type": "uint64",
-                  "value": null,
-                  "visibility": "internal"
-                },
-                "children": [
-                  {
-                    "attributes": {
-                      "name": "uint64",
-                      "type": "uint64"
-                    },
-                    "id": 2,
-                    "name": "ElementaryTypeName",
-                    "src": "75:6:0"
-                  }
-                ],
-                "id": 3,
-                "name": "VariableDeclaration",
-                "src": "75:17:0"
-              },
-              {
-                "attributes": {
-                  "constant": false,
-                  "name": "content",
-                  "scope": 6,
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "type": "string storage pointer",
-                  "value": null,
-                  "visibility": "internal"
-                },
-                "children": [
-                  {
-                    "attributes": {
-                      "name": "string",
-                      "type": "string storage pointer"
-                    },
-                    "id": 4,
-                    "name": "ElementaryTypeName",
-                    "src": "103:6:0"
-                  }
-                ],
-                "id": 5,
-                "name": "VariableDeclaration",
-                "src": "103:14:0"
-              }
-            ],
-            "id": 6,
-            "name": "StructDefinition",
-            "src": "53:71:0"
-          },
-          {
-            "attributes": {
               "constant": false,
-              "name": "blogs",
-              "scope": 66,
+              "name": "ownerToBlogHash",
+              "scope": 20,
               "stateVariable": true,
               "storageLocation": "default",
-              "type": "struct BlogBase.Blog storage ref[] storage ref",
+              "type": "mapping(address => string storage ref)",
               "value": null,
               "visibility": "public"
             },
             "children": [
               {
                 "attributes": {
-                  "length": null,
-                  "type": "struct BlogBase.Blog storage ref[] storage pointer"
-                },
-                "children": [
-                  {
-                    "attributes": {
-                      "contractScope": null,
-                      "name": "Blog",
-                      "referencedDeclaration": 6,
-                      "type": "struct BlogBase.Blog storage pointer"
-                    },
-                    "id": 7,
-                    "name": "UserDefinedTypeName",
-                    "src": "130:4:0"
-                  }
-                ],
-                "id": 8,
-                "name": "ArrayTypeName",
-                "src": "130:6:0"
-              }
-            ],
-            "id": 9,
-            "name": "VariableDeclaration",
-            "src": "130:20:0"
-          },
-          {
-            "attributes": {
-              "constant": false,
-              "name": "ownerToBlogIndex",
-              "scope": 66,
-              "stateVariable": true,
-              "storageLocation": "default",
-              "type": "mapping(address => uint256[] storage ref)",
-              "value": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "attributes": {
-                  "type": "mapping(address => uint256[] storage ref)"
+                  "type": "mapping(address => string storage ref)"
                 },
                 "children": [
                   {
@@ -253,39 +108,28 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 10,
+                    "id": 2,
                     "name": "ElementaryTypeName",
-                    "src": "165:7:0"
+                    "src": "61:7:0"
                   },
                   {
                     "attributes": {
-                      "length": null,
-                      "type": "uint256[] storage pointer"
+                      "name": "string",
+                      "type": "string storage pointer"
                     },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 11,
-                        "name": "ElementaryTypeName",
-                        "src": "176:7:0"
-                      }
-                    ],
-                    "id": 12,
-                    "name": "ArrayTypeName",
-                    "src": "176:9:0"
+                    "id": 3,
+                    "name": "ElementaryTypeName",
+                    "src": "72:6:0"
                   }
                 ],
-                "id": 13,
+                "id": 4,
                 "name": "Mapping",
-                "src": "157:29:0"
+                "src": "53:26:0"
               }
             ],
-            "id": 14,
+            "id": 5,
             "name": "VariableDeclaration",
-            "src": "157:53:0"
+            "src": "53:49:0"
           },
           {
             "attributes": {
@@ -297,7 +141,7 @@
               ],
               "name": "_createBlog",
               "payable": false,
-              "scope": 66,
+              "scope": 20,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -309,7 +153,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "owner",
-                      "scope": 54,
+                      "scope": 19,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -322,20 +166,20 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 15,
+                        "id": 6,
                         "name": "ElementaryTypeName",
-                        "src": "260:7:0"
+                        "src": "151:7:0"
                       }
                     ],
-                    "id": 16,
+                    "id": 7,
                     "name": "VariableDeclaration",
-                    "src": "260:13:0"
+                    "src": "151:13:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
-                      "name": "_content",
-                      "scope": 54,
+                      "name": "data",
+                      "scope": 19,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string memory",
@@ -348,19 +192,19 @@
                           "name": "string",
                           "type": "string storage pointer"
                         },
-                        "id": 17,
+                        "id": 8,
                         "name": "ElementaryTypeName",
-                        "src": "274:6:0"
+                        "src": "165:6:0"
                       }
                     ],
-                    "id": 18,
+                    "id": 9,
                     "name": "VariableDeclaration",
-                    "src": "274:15:0"
+                    "src": "165:11:0"
                   }
                 ],
-                "id": 19,
+                "id": 10,
                 "name": "ParameterList",
-                "src": "259:31:0"
+                "src": "150:27:0"
               },
               {
                 "attributes": {
@@ -369,537 +213,9 @@
                   ]
                 },
                 "children": [],
-                "id": 20,
+                "id": 11,
                 "name": "ParameterList",
-                "src": "306:0:0"
-              },
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "assignments": [
-                        22
-                      ]
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "constant": false,
-                          "name": "_blog",
-                          "scope": 54,
-                          "stateVariable": false,
-                          "storageLocation": "memory",
-                          "type": "struct BlogBase.Blog memory",
-                          "value": null,
-                          "visibility": "internal"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "contractScope": null,
-                              "name": "Blog",
-                              "referencedDeclaration": 6,
-                              "type": "struct BlogBase.Blog storage pointer"
-                            },
-                            "id": 21,
-                            "name": "UserDefinedTypeName",
-                            "src": "316:4:0"
-                          }
-                        ],
-                        "id": 22,
-                        "name": "VariableDeclaration",
-                        "src": "316:17:0"
-                      },
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "isStructConstructorCall": true,
-                          "lValueRequested": false,
-                          "names": [
-                            "createTime",
-                            "content"
-                          ],
-                          "type": "struct BlogBase.Blog memory",
-                          "type_conversion": false
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 6,
-                              "type": "type(struct BlogBase.Blog storage pointer)",
-                              "value": "Blog"
-                            },
-                            "id": 23,
-                            "name": "Identifier",
-                            "src": "336:4:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "isStructConstructorCall": false,
-                              "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
-                              "type": "uint64",
-                              "type_conversion": true
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": [
-                                    {
-                                      "typeIdentifier": "t_uint256",
-                                      "typeString": "uint256"
-                                    }
-                                  ],
-                                  "isConstant": false,
-                                  "isLValue": false,
-                                  "isPure": true,
-                                  "lValueRequested": false,
-                                  "type": "type(uint64)",
-                                  "value": "uint64"
-                                },
-                                "id": 24,
-                                "name": "ElementaryTypeNameExpression",
-                                "src": "367:6:0"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 412,
-                                  "type": "uint256",
-                                  "value": "now"
-                                },
-                                "id": 25,
-                                "name": "Identifier",
-                                "src": "374:3:0"
-                              }
-                            ],
-                            "id": 26,
-                            "name": "FunctionCall",
-                            "src": "367:11:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 18,
-                              "type": "string memory",
-                              "value": "_content"
-                            },
-                            "id": 27,
-                            "name": "Identifier",
-                            "src": "400:8:0"
-                          }
-                        ],
-                        "id": 28,
-                        "name": "FunctionCall",
-                        "src": "336:87:0"
-                      }
-                    ],
-                    "id": 29,
-                    "name": "VariableDeclarationStatement",
-                    "src": "316:107:0"
-                  },
-                  {
-                    "attributes": {
-                      "assignments": [
-                        31
-                      ]
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "constant": false,
-                          "name": "newBlogIndex",
-                          "scope": 54,
-                          "stateVariable": false,
-                          "storageLocation": "default",
-                          "type": "uint256",
-                          "value": null,
-                          "visibility": "internal"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "name": "uint",
-                              "type": "uint256"
-                            },
-                            "id": 30,
-                            "name": "ElementaryTypeName",
-                            "src": "433:4:0"
-                          }
-                        ],
-                        "id": 31,
-                        "name": "VariableDeclaration",
-                        "src": "433:17:0"
-                      },
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "commonType": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "-",
-                          "type": "uint256"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "isStructConstructorCall": false,
-                              "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
-                              "type": "uint256",
-                              "type_conversion": false
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": [
-                                    {
-                                      "typeIdentifier": "t_struct$_Blog_$6_memory_ptr",
-                                      "typeString": "struct BlogBase.Blog memory"
-                                    }
-                                  ],
-                                  "isConstant": false,
-                                  "isLValue": false,
-                                  "isPure": false,
-                                  "lValueRequested": false,
-                                  "member_name": "push",
-                                  "referencedDeclaration": null,
-                                  "type": "function (struct BlogBase.Blog storage ref) returns (uint256)"
-                                },
-                                "children": [
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 9,
-                                      "type": "struct BlogBase.Blog storage ref[] storage ref",
-                                      "value": "blogs"
-                                    },
-                                    "id": 32,
-                                    "name": "Identifier",
-                                    "src": "453:5:0"
-                                  }
-                                ],
-                                "id": 33,
-                                "name": "MemberAccess",
-                                "src": "453:10:0"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 22,
-                                  "type": "struct BlogBase.Blog memory",
-                                  "value": "_blog"
-                                },
-                                "id": 34,
-                                "name": "Identifier",
-                                "src": "464:5:0"
-                              }
-                            ],
-                            "id": 35,
-                            "name": "FunctionCall",
-                            "src": "453:17:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "hexvalue": "31",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "number",
-                              "type": "int_const 1",
-                              "value": "1"
-                            },
-                            "id": 36,
-                            "name": "Literal",
-                            "src": "473:1:0"
-                          }
-                        ],
-                        "id": 37,
-                        "name": "BinaryOperation",
-                        "src": "453:21:0"
-                      }
-                    ],
-                    "id": 38,
-                    "name": "VariableDeclarationStatement",
-                    "src": "433:41:0"
-                  },
-                  {
-                    "attributes": {
-                      "assignments": [
-                        42
-                      ]
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "constant": false,
-                          "name": "index",
-                          "scope": 54,
-                          "stateVariable": false,
-                          "storageLocation": "storage",
-                          "type": "uint256[] storage pointer",
-                          "value": null,
-                          "visibility": "internal"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "length": null,
-                              "type": "uint256[] storage pointer"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "name": "uint",
-                                  "type": "uint256"
-                                },
-                                "id": 40,
-                                "name": "ElementaryTypeName",
-                                "src": "484:4:0"
-                              }
-                            ],
-                            "id": 41,
-                            "name": "ArrayTypeName",
-                            "src": "484:6:0"
-                          }
-                        ],
-                        "id": 42,
-                        "name": "VariableDeclaration",
-                        "src": "484:20:0"
-                      },
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "type": "uint256[] storage ref"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 14,
-                              "type": "mapping(address => uint256[] storage ref)",
-                              "value": "ownerToBlogIndex"
-                            },
-                            "id": 43,
-                            "name": "Identifier",
-                            "src": "507:16:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 16,
-                              "type": "address",
-                              "value": "owner"
-                            },
-                            "id": 44,
-                            "name": "Identifier",
-                            "src": "524:5:0"
-                          }
-                        ],
-                        "id": 45,
-                        "name": "IndexAccess",
-                        "src": "507:23:0"
-                      }
-                    ],
-                    "id": 46,
-                    "name": "VariableDeclarationStatement",
-                    "src": "484:46:0"
-                  },
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "isStructConstructorCall": false,
-                          "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
-                          "type": "uint256",
-                          "type_conversion": false
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": [
-                                {
-                                  "typeIdentifier": "t_uint256",
-                                  "typeString": "uint256"
-                                }
-                              ],
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "member_name": "push",
-                              "referencedDeclaration": null,
-                              "type": "function (uint256) returns (uint256)"
-                            },
-                            "children": [
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 42,
-                                  "type": "uint256[] storage pointer",
-                                  "value": "index"
-                                },
-                                "id": 47,
-                                "name": "Identifier",
-                                "src": "540:5:0"
-                              }
-                            ],
-                            "id": 49,
-                            "name": "MemberAccess",
-                            "src": "540:10:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 31,
-                              "type": "uint256",
-                              "value": "newBlogIndex"
-                            },
-                            "id": 50,
-                            "name": "Identifier",
-                            "src": "551:12:0"
-                          }
-                        ],
-                        "id": 51,
-                        "name": "FunctionCall",
-                        "src": "540:24:0"
-                      }
-                    ],
-                    "id": 52,
-                    "name": "ExpressionStatement",
-                    "src": "540:24:0"
-                  }
-                ],
-                "id": 53,
-                "name": "Block",
-                "src": "306:265:0"
-              }
-            ],
-            "id": 54,
-            "name": "FunctionDefinition",
-            "src": "239:332:0"
-          },
-          {
-            "attributes": {
-              "constant": true,
-              "implemented": true,
-              "isConstructor": false,
-              "modifiers": [
-                null
-              ],
-              "name": "getBlogsLength",
-              "payable": false,
-              "scope": 66,
-              "stateMutability": "view",
-              "superFunction": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
-                "children": [],
-                "id": 55,
-                "name": "ParameterList",
-                "src": "601:2:0"
-              },
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "len",
-                      "scope": 65,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 56,
-                        "name": "ElementaryTypeName",
-                        "src": "628:7:0"
-                      }
-                    ],
-                    "id": 57,
-                    "name": "VariableDeclaration",
-                    "src": "628:11:0"
-                  }
-                ],
-                "id": 58,
-                "name": "ParameterList",
-                "src": "627:13:0"
+                "src": "194:0:0"
               },
               {
                 "children": [
@@ -913,33 +229,17 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "operator": "=",
-                          "type": "uint256"
+                          "type": "string storage ref"
                         },
                         "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 57,
-                              "type": "uint256",
-                              "value": "len"
-                            },
-                            "id": 59,
-                            "name": "Identifier",
-                            "src": "654:3:0"
-                          },
                           {
                             "attributes": {
                               "argumentTypes": null,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
-                              "lValueRequested": false,
-                              "member_name": "length",
-                              "referencedDeclaration": null,
-                              "type": "uint256"
+                              "lValueRequested": true,
+                              "type": "string storage ref"
                             },
                             "children": [
                               {
@@ -948,48 +248,76 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 9,
-                                  "type": "struct BlogBase.Blog storage ref[] storage ref",
-                                  "value": "blogs"
+                                  "referencedDeclaration": 5,
+                                  "type": "mapping(address => string storage ref)",
+                                  "value": "ownerToBlogHash"
                                 },
-                                "id": 60,
+                                "id": 12,
                                 "name": "Identifier",
-                                "src": "660:5:0"
+                                "src": "204:15:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 7,
+                                  "type": "address",
+                                  "value": "owner"
+                                },
+                                "id": 13,
+                                "name": "Identifier",
+                                "src": "220:5:0"
                               }
                             ],
-                            "id": 61,
-                            "name": "MemberAccess",
-                            "src": "660:12:0"
+                            "id": 14,
+                            "name": "IndexAccess",
+                            "src": "204:22:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 9,
+                              "type": "string memory",
+                              "value": "data"
+                            },
+                            "id": 15,
+                            "name": "Identifier",
+                            "src": "229:4:0"
                           }
                         ],
-                        "id": 62,
+                        "id": 16,
                         "name": "Assignment",
-                        "src": "654:18:0"
+                        "src": "204:29:0"
                       }
                     ],
-                    "id": 63,
+                    "id": 17,
                     "name": "ExpressionStatement",
-                    "src": "654:18:0"
+                    "src": "204:29:0"
                   }
                 ],
-                "id": 64,
+                "id": 18,
                 "name": "Block",
-                "src": "645:34:0"
+                "src": "194:46:0"
               }
             ],
-            "id": 65,
+            "id": 19,
             "name": "FunctionDefinition",
-            "src": "578:101:0"
+            "src": "130:110:0"
           }
         ],
-        "id": 66,
+        "id": 20,
         "name": "ContractDefinition",
-        "src": "27:656:0"
+        "src": "27:216:0"
       }
     ],
-    "id": 67,
+    "id": 21,
     "name": "SourceUnit",
-    "src": "0:683:0"
+    "src": "0:243:0"
   },
   "compiler": {
     "name": "solc",
@@ -999,9 +327,9 @@
     "1517834970976": {
       "events": {},
       "links": {},
-      "address": "0xfb0b0611f49762bbd573abab138e54219fa20f7c"
+      "address": "0x589f4a89a77fa6f561cd499f6ede7ecf822da3c5"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-02-07T09:42:54.468Z"
+  "updatedAt": "2018-02-12T08:29:57.458Z"
 }

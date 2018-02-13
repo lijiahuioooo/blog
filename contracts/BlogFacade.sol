@@ -29,8 +29,8 @@ contract BlogFacade is BlogBase,BlogCoin{
     function _getBlog(address owner)
     public view returns(string content){
 
-        content = ownerToBlogHash(owner);
+        string memory data = ownerToBlogHash[owner];
+        content = data;
     }
-
 
 }

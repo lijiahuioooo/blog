@@ -6,15 +6,17 @@ var ipfsFacade = require('./ipfsFacade.js');
 var router = express.Router();
 
 
-router.post('/', async function (req, res) {
-    const value =100;
+router.post('/', async function (req, res) {;
+
     console.log("publish 请求参数=》"+req.body.content+" from:"+facade.from);
+    var current_time= new Date().getTime()
+    const dataJson = {"data":req.body.content, "time":Math.floor(current_time/1000)};
     //数据保存到ipfs
-    var ipfs_hash = await ipfsFacade.add(req.body.content);
-    var blogArr = JSON.parse(await facade.getBlog(facade.to));
-    console.log("blogArr=>"+blogArr);
-    blogArr.push({"data":ipfs_hash,"time":new Date().getTime()});
-    await facade.publish(facade.from,facade.to,JSON.stringify(blogArr),value);
+    const hash = await ipfsFacade.add(dataJson);
+    //从ETH获取文章hash值列表
+    var ipfs_list = await facade.getBlog(facade.to);
+    
+    await facade.publish(facade.from,facade.to,ipfs_list+":"+hash,100);
     res.redirect('index');
 })
 module.exports = router;
