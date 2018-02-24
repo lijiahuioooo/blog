@@ -7,7 +7,7 @@ const blogFacadeAbi= require("../ABI/BlogFacade.json");
 
 
 //合约地址
-const blogFacadeAddress = "0x2dffa53c99a4386fb4122124b70376c50163c465";
+const blogFacadeAddress = "0x8e6dac54ec8507fa17eb3e0c3c655bdbf61845ef";
 
 
 const web3 = new Web3(new Web3.providers.HttpProvider( "http://101.201.148.102:8545"));
@@ -15,8 +15,8 @@ const web3 = new Web3(new Web3.providers.HttpProvider( "http://101.201.148.102:8
 const facadeInstance = new web3.eth.Contract(blogFacadeAbi.abi,blogFacadeAddress);
 
 
-const from ="0xbeb4716ac4c51fa6051b7442dcbb2a61eeecad00";
-const to ="0x8e7cad12796dea7123f52889ea22a225639af425";
+const from ="0xafdf293a96a4ce3b972671048a07418941e2d3f3";
+const to ="0x26a7316e8f84ab12937f9cb62980af662ac6323f";
 
 //根据索引查询博客
 async function getBlog(index)
@@ -35,7 +35,7 @@ async function publish(from,owner,content,value){
     // console.log("lockAccount==>"+lockAccount);
 
     return await facadeInstance.methods._publish(owner,content,value)
-        .send({from:from,gas: 20000000, gasPrice: '20000000000'}).then(console.log);
+        .send({from:from,gas: 500000, gasPrice: '20000000000'}).then(console.log);
 }
 
 //查询指定账户余额
