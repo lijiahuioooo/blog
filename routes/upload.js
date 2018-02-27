@@ -13,6 +13,7 @@ router.post('/', async function (req, res) {;
     var des_file = __dirname + "/" + req.files[0].originalname;
     fs.readFile( req.files[0].path, async function (err, data) {
         const hash = await ipfsFacade.upload(data);
+        console.log(hash);
         res.end(hash);
     });
 })
