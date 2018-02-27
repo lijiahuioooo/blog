@@ -1,5 +1,5 @@
 const ipfsAPI = require('ipfs-api');
-const ipfs = ipfsAPI({host: '127.0.0.1', port: '5001', protocol: 'http'});
+const ipfs = ipfsAPI({host: '10.45.144.209', port: '5001', protocol: 'http'});
 
 
 exports.add = (buffer) =>{
