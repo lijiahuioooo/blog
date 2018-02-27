@@ -48,6 +48,14 @@
       .ql-toolbar.ql-snow .ql-formats:last-child {
         margin-right: 0;
       }
+
+      .fm .or img {
+              margin: 20px 0 25px;
+              width:100%;
+              height:auto;
+              max-width:466px;
+              max-height: 450px;
+            }
     </style>
 
   </head>
@@ -566,7 +574,6 @@
                   // this is callback data: url
 //				const url = JSON.parse(xhr.responseText).data;
                   const url = xhr.responseText;
-                  alert(url)
                   insertToEditor(url);
               }
           };
@@ -580,9 +587,9 @@
        */
       function insertToEditor(url) {
           // push image url to rich editor.
-          const range = editor.getSelection();
-//		editor.insertEmbed(range.index, 'image', `http://127.0.0.1:8080/ipfs/${url}`);
-          editor.insertEmbed(range.index, 'image', url);
+          const range = quill.getSelection();
+		quill.insertEmbed(range.index, 'image', `http://127.0.0.1:8080/ipfs/${url}`);
+
       }
 
       // quill editor add image handler
