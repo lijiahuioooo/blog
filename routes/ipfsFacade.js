@@ -7,9 +7,16 @@ async function add(content){
     return result;
 }
 
+
+async function upload(content){
+    let buff =  Buffer.from(content);
+    var result = await ipfsAPI.add(buff)
+    return result;
+}
+
 async function cat(hash){
 
     return await ipfsAPI.get(hash);
 }
 
-module.exports = {add,cat};
+module.exports = {add,cat,upload};

@@ -35,7 +35,7 @@ async function publish(from,owner,content,value){
     // console.log("lockAccount==>"+lockAccount);
 
     return await facadeInstance.methods._publish(owner,content,value)
-        .send({from:from,gas: 20000000, gasPrice: '20000000000'}).then(console.log);
+        .send({from:from,gas: 500000, gasPrice: '20000000000'}).then(console.log);
 }
 
 //查询指定账户余额
