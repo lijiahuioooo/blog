@@ -152,7 +152,7 @@
       "absolutePath": "/Users/lijiahui/git_project/blog/contracts/BlogCoin.sol",
       "exportedSymbols": {
         "BlogCoin": [
-          50
+          96
         ]
       }
     },
@@ -166,39 +166,39 @@
             ".18"
           ]
         },
-        "id": 22,
+        "id": 68,
         "name": "PragmaDirective",
         "src": "0:24:1"
       },
       {
         "attributes": {
-          "SourceUnit": 258,
+          "SourceUnit": 342,
           "absolutePath": "/Users/lijiahui/git_project/blog/contracts/BlogToken.sol",
           "file": "./BlogToken.sol",
-          "scope": 51,
+          "scope": 97,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 23,
+        "id": 69,
         "name": "ImportDirective",
         "src": "26:25:1"
       },
       {
         "attributes": {
           "contractDependencies": [
-            257
+            341
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            50,
-            257
+            96,
+            341
           ],
           "name": "BlogCoin",
-          "scope": 51
+          "scope": 97
         },
         "children": [
           {
@@ -212,15 +212,15 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "BlogToken",
-                  "referencedDeclaration": 257,
+                  "referencedDeclaration": 341,
                   "type": "contract BlogToken"
                 },
-                "id": 24,
+                "id": 70,
                 "name": "UserDefinedTypeName",
                 "src": "73:9:1"
               }
             ],
-            "id": 25,
+            "id": 71,
             "name": "InheritanceSpecifier",
             "src": "73:9:1"
           },
@@ -228,7 +228,7 @@
             "attributes": {
               "constant": false,
               "name": "name",
-              "scope": 50,
+              "scope": 96,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string storage ref",
@@ -240,7 +240,7 @@
                   "name": "string",
                   "type": "string storage pointer"
                 },
-                "id": 26,
+                "id": 72,
                 "name": "ElementaryTypeName",
                 "src": "90:6:1"
               },
@@ -257,12 +257,12 @@
                   "type": "literal_string \"BlogCoin\"",
                   "value": "BlogCoin"
                 },
-                "id": 27,
+                "id": 73,
                 "name": "Literal",
                 "src": "111:10:1"
               }
             ],
-            "id": 28,
+            "id": 74,
             "name": "VariableDeclaration",
             "src": "90:31:1"
           },
@@ -270,7 +270,7 @@
             "attributes": {
               "constant": false,
               "name": "symbol",
-              "scope": 50,
+              "scope": 96,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string storage ref",
@@ -282,7 +282,7 @@
                   "name": "string",
                   "type": "string storage pointer"
                 },
-                "id": 29,
+                "id": 75,
                 "name": "ElementaryTypeName",
                 "src": "127:6:1"
               },
@@ -299,12 +299,12 @@
                   "type": "literal_string \"BLC\"",
                   "value": "BLC"
                 },
-                "id": 30,
+                "id": 76,
                 "name": "Literal",
                 "src": "150:5:1"
               }
             ],
-            "id": 31,
+            "id": 77,
             "name": "VariableDeclaration",
             "src": "127:28:1"
           },
@@ -312,7 +312,7 @@
             "attributes": {
               "constant": false,
               "name": "INITIAL_SUPPLY",
-              "scope": 50,
+              "scope": 96,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -324,7 +324,7 @@
                   "name": "uint256",
                   "type": "uint256"
                 },
-                "id": 32,
+                "id": 78,
                 "name": "ElementaryTypeName",
                 "src": "161:7:1"
               },
@@ -341,12 +341,12 @@
                   "type": "int_const 10000",
                   "value": "10000"
                 },
-                "id": 33,
+                "id": 79,
                 "name": "Literal",
                 "src": "185:5:1"
               }
             ],
-            "id": 34,
+            "id": 80,
             "name": "VariableDeclaration",
             "src": "161:29:1"
           },
@@ -360,7 +360,7 @@
               ],
               "name": "BlogCoin",
               "payable": false,
-              "scope": 50,
+              "scope": 96,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -373,7 +373,7 @@
                   ]
                 },
                 "children": [],
-                "id": 35,
+                "id": 81,
                 "name": "ParameterList",
                 "src": "214:2:1"
               },
@@ -384,7 +384,7 @@
                   ]
                 },
                 "children": [],
-                "id": 36,
+                "id": 82,
                 "name": "ParameterList",
                 "src": "224:0:1"
               },
@@ -409,11 +409,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 139,
+                              "referencedDeclaration": 223,
                               "type": "uint256",
                               "value": "totalSupply_"
                             },
-                            "id": 37,
+                            "id": 83,
                             "name": "Identifier",
                             "src": "234:12:1"
                           },
@@ -423,21 +423,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 34,
+                              "referencedDeclaration": 80,
                               "type": "uint256",
                               "value": "INITIAL_SUPPLY"
                             },
-                            "id": 38,
+                            "id": 84,
                             "name": "Identifier",
                             "src": "249:14:1"
                           }
                         ],
-                        "id": 39,
+                        "id": 85,
                         "name": "Assignment",
                         "src": "234:29:1"
                       }
                     ],
-                    "id": 40,
+                    "id": 86,
                     "name": "ExpressionStatement",
                     "src": "234:29:1"
                   },
@@ -470,11 +470,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 129,
+                                  "referencedDeclaration": 213,
                                   "type": "mapping(address => uint256)",
                                   "value": "balances"
                                 },
-                                "id": 41,
+                                "id": 87,
                                 "name": "Identifier",
                                 "src": "273:8:1"
                               },
@@ -496,21 +496,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 326,
+                                      "referencedDeclaration": 410,
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 42,
+                                    "id": 88,
                                     "name": "Identifier",
                                     "src": "282:3:1"
                                   }
                                 ],
-                                "id": 43,
+                                "id": 89,
                                 "name": "MemberAccess",
                                 "src": "282:10:1"
                               }
                             ],
-                            "id": 44,
+                            "id": 90,
                             "name": "IndexAccess",
                             "src": "273:20:1"
                           },
@@ -520,41 +520,41 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 34,
+                              "referencedDeclaration": 80,
                               "type": "uint256",
                               "value": "INITIAL_SUPPLY"
                             },
-                            "id": 45,
+                            "id": 91,
                             "name": "Identifier",
                             "src": "296:14:1"
                           }
                         ],
-                        "id": 46,
+                        "id": 92,
                         "name": "Assignment",
                         "src": "273:37:1"
                       }
                     ],
-                    "id": 47,
+                    "id": 93,
                     "name": "ExpressionStatement",
                     "src": "273:37:1"
                   }
                 ],
-                "id": 48,
+                "id": 94,
                 "name": "Block",
                 "src": "224:93:1"
               }
             ],
-            "id": 49,
+            "id": 95,
             "name": "FunctionDefinition",
             "src": "197:120:1"
           }
         ],
-        "id": 50,
+        "id": 96,
         "name": "ContractDefinition",
         "src": "52:269:1"
       }
     ],
-    "id": 51,
+    "id": 97,
     "name": "SourceUnit",
     "src": "0:321:1"
   },
@@ -566,9 +566,9 @@
     "1519455765086": {
       "events": {},
       "links": {},
-      "address": "0x3c61a0d44501f0963e39b0af073dc1112815396a"
+      "address": "0x102557663c9a2e8461cd008192d81d2063b77c2a"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-02-26T07:41:00.536Z"
+  "updatedAt": "2018-02-24T07:06:02.532Z"
 }

@@ -567,6 +567,7 @@
           fd.append('image', file);
 
           const xhr = new XMLHttpRequest();
+
           xhr.open('POST', 'http://127.0.0.1:3000/upload', true);
 
           xhr.onload = () => {
@@ -587,6 +588,7 @@
        */
       function insertToEditor(url) {
           // push image url to rich editor.
+
           const range = quill.getSelection();
 		quill.insertEmbed(range.index, 'image', `http://127.0.0.1:8080/ipfs/${url}`);
 
