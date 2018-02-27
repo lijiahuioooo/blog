@@ -581,7 +581,7 @@
       function insertToEditor(url) {
           // push image url to rich editor.
           const range = editor.getSelection();
-//		editor.insertEmbed(range.index, 'image', `http://localhost:9000${url}`);
+//		editor.insertEmbed(range.index, 'image', `http://127.0.0.1:8080/ipfs/${url}`);
           editor.insertEmbed(range.index, 'image', url);
       }
 
